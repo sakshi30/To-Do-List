@@ -5,7 +5,7 @@
   "main":"app.js",
   "scripts": {
     "start": "node ./bin/www", 
-    "postinstall": "grunt ng build --aot -prod"
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
     "node": "~8.9.4", 
