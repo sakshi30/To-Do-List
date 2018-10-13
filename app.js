@@ -24,7 +24,7 @@ app.all('*', (req, res, next) => {
 	}
 })
 
-const url = 'mongodb://localhost:27017/todo';
+const url = 'mongodb://Sakshi30:Dines2h@ds131323.mlab.com:31323/todolist_sakshi';
 
 
 mongoose.connect(url, {useNewUrlParser: true});
