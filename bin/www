@@ -31,13 +31,6 @@ var server = http.createServer(app);
   cert: fs.readFileSync(__dirname+'/private.cert')
 };
 
-var secureServer = https.createServer(options,app);
-
-secureServer.listen(app.get('secport'), () => {
-   console.log('Server listening on port ',app.get('secport'));
-});
-secureServer.on('error', onError);
-secureServer.on('listening', onListening);
 
 server.listen(port);
 server.on('error', onError);

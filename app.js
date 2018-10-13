@@ -15,14 +15,7 @@ var config = require('./config');
 var user = require('./models/user');
 
 var app = express();
-app.all('*', (req, res, next) => {
-	if(req.secure){
-		return next();
-	}
-	else{
-		res.redirect(307, 'https://'+req.hostname+':'+app.get('secport')+req.url);
-	}
-})
+
 
 const url = 'mongodb://Sakshi30:Dines2h@ds131323.mlab.com:31323/todolist_sakshi';
 
