@@ -33,7 +33,7 @@ var server = http.createServer(app);
 
 
 server.listen(port, () => {
-  res.send("Server up and running on port", port);
+  console.log("Server up and running on port", port);
 });
 server.on('error', onError);
 server.on('listening', onListening);
